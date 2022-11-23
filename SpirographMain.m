@@ -1,8 +1,10 @@
-
+%%%%%
 clear all;clc;close all
 
 tic
-figure
+figure,hold on,axis equal
+
+set(gca,'visible','off')
 set(gcf,'Position',[0 0 1920 1080]);
 set(gcf,'color','w');
 
@@ -11,11 +13,7 @@ video.Quality   = 100;
 video.FrameRate = 60;
 open(video);
 
-hold on,axis equal
-
-set(gca,'visible','off')
-
-n_vueltas     = 2;
+n_turns       = 2;
 paths_weights = 1.5;
 points_weight = 100;
 
@@ -23,40 +21,27 @@ r3 = 0.2;  c3 = 'r';  l3 = 1.5; % exterior
 r2 = 0.3;  c2 = 'g';  l2 = 1.5; % media
 r1 = 0.4;  c1 = 'b';  l1 = 1.5; % interna
 
-line1_1 = animatedline('Color',c1,'LineWidth',l1);
-line1_2 = animatedline('Color',c1,'LineWidth',l1);
-line1_3 = animatedline('Color',c1,'LineWidth',l1);
-
-line2_1 = animatedline('Color',c2,'LineWidth',l2);
-line2_2 = animatedline('Color',c2,'LineWidth',l2);
-line2_3 = animatedline('Color',c2,'LineWidth',l2);
-
-line3_1 = animatedline('Color',c3,'LineWidth',l3);
-line3_2 = animatedline('Color',c3,'LineWidth',l3);
-line3_3 = animatedline('Color',c3,'LineWidth',l3);
-
-
 ntheta    = 360;
-theta     = linspace(0,360*n_vueltas,ntheta);
+theta     = linspace(0,360*n_turns,ntheta);
 
 t1 = [0 120 240];
 t2 = [240 0 120];
 t3 = [120 240 0];
 
-n1     = 5 * n_vueltas*360;
+n1     = 5 * n_turns*360;
 theta1 = [linspace(t1(1),t1(1)+n1,ntheta)' linspace(t1(2),t1(2)+n1,ntheta)' linspace(t1(3),t1(3)+n1,ntheta)'];
 
-n2     = 9 * n_vueltas*360;
+n2     = 9 * n_turns*360;
 theta2 = [linspace(t2(1),t2(1)+n2,ntheta)' linspace(t2(2),t2(2)+n2,ntheta)' linspace(t2(3),t2(3)+n2,ntheta)'];
 
-n3     = 11 * n_vueltas*360;
+n3     = 11 * n_turns*360;
 theta3 = [linspace(t3(1),t3(1)+n3,ntheta)' linspace(t3(2),t3(2)+n3,ntheta)' linspace(t3(3),t3(3)+n3,ntheta)'];
 
 r11 = r1;
 r22 = 2*r1+r2;
 r33 = 2*r1+2*r2+r3;
 
-thetaS = linspace(0,2*pi*n_vueltas,ntheta);
+thetaS = linspace(0,2*pi*n_turns,ntheta);
 n      = 8;
 d      = 2;
 
@@ -82,10 +67,10 @@ x3 = rt.*cos(thetaS);
 y3 = rt.*sin(thetaS);
 
 
-%Linea exterior 
+% Linea exterior 
 Re = R3+r3+r3/d;
 
-%Linea seno
+% Linea seno
 Rs = Re+r3+r3/2;
 
 % Seno Exterior
@@ -114,12 +99,23 @@ plot(x42,y42,'g','LineWidth',paths_weights)
 plot(x41,y41,'b','LineWidth',paths_weights)
 
 len = Rs+r3;
-
 axis([-len len -len len]);
 
 xc = Re*cosd(theta);
 yc = Re*sind(theta);
 plot(xc,yc,'k','LineWidth',paths_weights);
+
+line1_1 = animatedline('Color',c1,'LineWidth',l1);
+line1_2 = animatedline('Color',c1,'LineWidth',l1);
+line1_3 = animatedline('Color',c1,'LineWidth',l1);
+
+line2_1 = animatedline('Color',c2,'LineWidth',l2);
+line2_2 = animatedline('Color',c2,'LineWidth',l2);
+line2_3 = animatedline('Color',c2,'LineWidth',l2);
+
+line3_1 = animatedline('Color',c3,'LineWidth',l3);
+line3_2 = animatedline('Color',c3,'LineWidth',l3);
+line3_3 = animatedline('Color',c3,'LineWidth',l3);
 
 for i = 1:length(theta)
     

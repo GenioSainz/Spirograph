@@ -6,4 +6,5 @@ function [x,y,c] = moving_circles(r,x0,y0,color,line)
          x       = x0 + r*cosd(theta);
          y       = y0 + r*sind(theta);
          c       = plot(x,y,color,'LineWidth',line);
+         
 end
