@@ -3,7 +3,7 @@
 With this script you can generate and modify the animation of a spirograph:
 - You can change the Quality, FrameRate, and the size of the video.
 - The color and thickness of lines and points.
-- Changing the size of the circles will change the pattern of the drawing.
+- Changing the size of the moving circles will change the pattern of the drawing.
 
 
 # Animation
