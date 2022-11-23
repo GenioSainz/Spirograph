@@ -1,4 +1,3 @@
-%-
 clear all;clc;close all
 
 tic
@@ -17,9 +16,15 @@ n_turns       = 2;
 paths_weights = 1.5;
 points_weight = 100;
 
-r3 = 0.2;  c3 = 'r';  l3 = 1.5; % exterior
-r2 = 0.3;  c2 = 'g';  l2 = 1.5; % media
-r1 = 0.4;  c1 = 'b';  l1 = 1.5; % interna
+% radius
+r3 = 0.2;  
+r2 = 0.3;   
+r1 = 0.4;  
+
+% colors 
+c3 = 'r'; 
+c2 = 'g';
+c1 = 'b';
 
 ntheta    = 360;
 theta     = linspace(0,360*n_turns,ntheta);
@@ -45,21 +50,21 @@ thetaS = linspace(0,2*pi*n_turns,ntheta);
 n      = 8;
 d      = 2;
 
-% Transformacion de la trayectoria de x1,y1 polar-->cartesianas
+% Path 1 x1,y1 polar to Cartesian
 R1 = r11+r1/d ;
 r  = r1/d ;
 rt = R1+r*cos(n*thetaS);
 x1 = rt.*cos(thetaS);
 y1 = rt.*sin(thetaS);
 
-% Transformacion de la trayectoria de x2,y2 polar-->cartesianas
+% Path 2 x2,y2 polar to Cartesian
 R2 = R1+r1+r2+(r1+r2)/d;
 r  = r2/d ;
 rt = R2+r*cos(n*thetaS+2*pi/3);
 x2 = rt.*cos(thetaS);
 y2 = rt.*sin(thetaS);
 
-% Transformacion de la trayectoria de x3,y3 polar-->cartesianas
+% Path 3 x3,y3 polar to Cartesian
 R3 = R2+r2+r3+(r2+r3)/d;
 r  = r3/d ;
 rt = R3+r*cos(n*thetaS-2*pi/3);
@@ -67,13 +72,9 @@ x3 = rt.*cos(thetaS);
 y3 = rt.*sin(thetaS);
 
 
-% Linea exterior 
+% Sine waves 
 Re = R3+r3+r3/d;
-
-% Linea seno
 Rs = Re+r3+r3/2;
-
-% Seno Exterior
 r   = r3 ;
 rt  = Rs+r*cos(n*thetaS);
 x41 = rt.*cos(thetaS);
@@ -105,17 +106,17 @@ xc = Re*cosd(theta);
 yc = Re*sind(theta);
 plot(xc,yc,'k','LineWidth',paths_weights);
 
-line1_1 = animatedline('Color',c1,'LineWidth',l1);
-line1_2 = animatedline('Color',c1,'LineWidth',l1);
-line1_3 = animatedline('Color',c1,'LineWidth',l1);
+line1_1 = animatedline('Color',c1,'LineWidth',paths_weights);
+line1_2 = animatedline('Color',c1,'LineWidth',paths_weights);
+line1_3 = animatedline('Color',c1,'LineWidth',paths_weights);
 
-line2_1 = animatedline('Color',c2,'LineWidth',l2);
-line2_2 = animatedline('Color',c2,'LineWidth',l2);
-line2_3 = animatedline('Color',c2,'LineWidth',l2);
+line2_1 = animatedline('Color',c2,'LineWidth',paths_weights);
+line2_2 = animatedline('Color',c2,'LineWidth',paths_weights);
+line2_3 = animatedline('Color',c2,'LineWidth',paths_weights);
 
-line3_1 = animatedline('Color',c3,'LineWidth',l3);
-line3_2 = animatedline('Color',c3,'LineWidth',l3);
-line3_3 = animatedline('Color',c3,'LineWidth',l3);
+line3_1 = animatedline('Color',c3,'LineWidth',paths_weights);
+line3_2 = animatedline('Color',c3,'LineWidth',paths_weights);
+line3_3 = animatedline('Color',c3,'LineWidth',paths_weights);
 
 for i = 1:length(theta)
     
@@ -159,7 +160,6 @@ for i = 1:length(theta)
 
     end
 
-    
 end
  
 for i = 1:20
