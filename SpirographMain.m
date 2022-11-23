@@ -12,9 +12,9 @@ video.Quality   = 100;
 video.FrameRate = 60;
 open(video);
 
-n_turns       = 2;
-paths_weights = 1.5;
-points_weight = 100;
+n_turns         = 2;
+paths_weights   = 1.5;
+points_weight   = 100;
 
 % radius
 r3 = 0.2;  
@@ -26,12 +26,12 @@ c3 = 'r';
 c2 = 'g';
 c1 = 'b';
 
-ntheta    = 360;
-theta     = linspace(0,360*n_turns,ntheta);
+ntheta  = 360;
+theta   = linspace(0,360*n_turns,ntheta);
 
-t1 = [0 120 240];
-t2 = [240 0 120];
-t3 = [120 240 0];
+t1     = [0 120 240];
+t2     = [240 0 120];
+t3     = [120 240 0];
 
 n1     = 5 * n_turns*360;
 theta1 = [linspace(t1(1),t1(1)+n1,ntheta)' linspace(t1(2),t1(2)+n1,ntheta)' linspace(t1(3),t1(3)+n1,ntheta)'];
@@ -42,9 +42,9 @@ theta2 = [linspace(t2(1),t2(1)+n2,ntheta)' linspace(t2(2),t2(2)+n2,ntheta)' lins
 n3     = 11 * n_turns*360;
 theta3 = [linspace(t3(1),t3(1)+n3,ntheta)' linspace(t3(2),t3(2)+n3,ntheta)' linspace(t3(3),t3(3)+n3,ntheta)'];
 
-r11 = r1;
-r22 = 2*r1+r2;
-r33 = 2*r1+2*r2+r3;
+r11    = r1;
+r22    = 2*r1+r2;
+r33    = 2*r1+2*r2+r3;
 
 thetaS = linspace(0,2*pi*n_turns,ntheta);
 n      = 8;
