@@ -1,4 +1,4 @@
-# Spirograph
+
 
 With this script you can generate and modify the animation of a spirograph:
 - You can change the Quality, FrameRate, and the size of the video.
