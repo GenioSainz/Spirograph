@@ -1,4 +1,4 @@
-%%%%%
+%-
 clear all;clc;close all
 
 tic
