@@ -1,14 +1,14 @@
 # Spirograph
 
 With this script you can generate and modify the animation of a spirograph using Matlab.
-The trajectory of the moving circles is a circular-oscillating motion.
+The trajectory of the moving circles that draw the pattern is a circular oscillation-movement.
 
 Changing the associated parameters of the moving circles will change the pattern of the drawing.
 
-- $r1,r2,r3: $ Radius of the circles.
-- $s1,s2,s3: $ Speeds of the circles. s1 with value 7 means that circle 1 rotates 7 turns for each turn of the radial reference system.
-- $k: $ Oscillations amplitude. k with value 0.5 means that the circles oscillate with respect to the radial reference system with an amplitude equal to half the radius.
-- $n: $ Number of oscillations for each turn of the reference system.
+- *r1, r2, r3* : Radius of the circles.
+- *s1, s2, s3* :  Speeds of the circles. s1 with value 7 means that circle 1 rotates 7 turns for each turn of the radial reference system.
+- *k* : Oscillations amplitude. k with value 0.5 means that the circles oscillate with respect to the radial reference system with an amplitude equal to half the radius.
+- *n* : Number of oscillations for each turn of the reference system.
 
 
 

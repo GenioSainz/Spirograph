@@ -5,7 +5,7 @@ r3 = 7;
 r2 = 6;   
 r1 = 5; 
 
-% moving circles speed
+% moving circles speeds
 s3 = 13;
 s2 = 11;
 s1 = 9;
