@@ -2,16 +2,16 @@ clear all;clc;close all;tic
 
 % moving circles radius
 r3 = 2;  
-r2 = 4;   
+r2 = 2;   
 r1 = 2; 
 
 % moving circles speeds
-s3 = 9;
-s2 = 2;
-s1 = 9;
+s3 = 5;
+s2 = 5;
+s1 = 5;
 
-n  = 8;
-k  = 0;
+n  = 12;
+k  = 1;
 % n => path xi,yi => number of oscillations
 % k => path xi,yi => oscillations amplitude factor
 % respect each moving circle radius
