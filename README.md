@@ -23,7 +23,7 @@ $$ [s1,s2,s3] = [9,5,7] $$
 ![SpirographAnimation0](/animations/k_0.0_n_8.0_r123_9.0_7.0_5.0_s123_9.0_5.0_7.0.png)
 ![SpirographAnimation1](/animations/k_0.0_n_8.0_r123_9.0_7.0_5.0_s123_9.0_5.0_7.0.gif)
 
-___
+<!-- ___
 
 $$ [k,n] = [0.25,8] $$
 
@@ -32,7 +32,7 @@ $$ [r1,r2,r3] = [2,2,2] $$
 $$ [s1,s2,s3] = [5,5,5] $$
 
 ![SpirographAnimation2](/animations/k_0.25_n_8.0_r123_2.0_2.0_2.0_s123_5.0_5.0_5.0.png)
-![SpirographAnimation3](/animations/k_0.25_n_8.0_r123_2.0_2.0_2.0_s123_5.0_5.0_5.0.gif)
+![SpirographAnimation3](/animations/k_0.25_n_8.0_r123_2.0_2.0_2.0_s123_5.0_5.0_5.0.gif) -->
 
 ___
 
