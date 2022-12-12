@@ -23,16 +23,17 @@ $$ [s1,s2,s3] = [9,5,7] $$
 ![SpirographAnimation0](/animations/k_0.0_n_8.0_r123_9.0_7.0_5.0_s123_9.0_5.0_7.0.png)
 ![SpirographAnimation1](/animations/k_0.0_n_8.0_r123_9.0_7.0_5.0_s123_9.0_5.0_7.0.gif)
 
-<!-- ___
+___
 
-$$ [k,n] = [0.25,8] $$
+$$ [k,n] = [1,12] $$
 
-$$ [r1,r2,r3] = [2,2,2] $$
+$$ [r1,r2,r3] = [5,5,5] $$
 
-$$ [s1,s2,s3] = [5,5,5] $$
+$$ [s1,s2,s3] = [5,7,9] $$
 
-![SpirographAnimation2](/animations/k_0.25_n_8.0_r123_2.0_2.0_2.0_s123_5.0_5.0_5.0.png)
-![SpirographAnimation3](/animations/k_0.25_n_8.0_r123_2.0_2.0_2.0_s123_5.0_5.0_5.0.gif) -->
+![SpirographAnimation8](/animations/k_1.00_n_12.0_r123_5.0_5.0_5.0_s123_5.0_7.0_9.0.png)
+![SpirographAnimation9](/animations/k_1.00_n_12.0_r123_5.0_5.0_5.0_s123_5.0_7.0_9.0.gif)
+
 
 ___
 
@@ -56,16 +57,7 @@ $$ [s1,s2,s3] = [9,11,13] $$
 ![SpirographAnimation6](/animations/k_0.50_n_10.0_r123_5.0_6.0_7.0_s123_9.0_11.0_13.0.png)
 ![SpirographAnimation7](/animations/k_0.50_n_10.0_r123_5.0_6.0_7.0_s123_9.0_11.0_13.0.gif)
 
-___
 
-$$ [k,n] = [1,12] $$
-
-$$ [r1,r2,r3] = [5,5,5] $$
-
-$$ [s1,s2,s3] = [5,7,9] $$
-
-![SpirographAnimation8](/animations/k_1.00_n_12.0_r123_5.0_5.0_5.0_s123_5.0_7.0_9.0.png)
-![SpirographAnimation9](/animations/k_1.00_n_12.0_r123_5.0_5.0_5.0_s123_5.0_7.0_9.0.gif)
 
 
 
